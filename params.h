@@ -6,13 +6,14 @@
 
 
 
-#define N 10
-#define M 20
+#define N 20
+#define _M 40
 #define K 10
 #define _Q 8380417
 #define D 24
 #define GAMMA1 ((Q - 1)/16)
 #define GAMMA2 (GAMMA1/2)
 #define ALPHA (2*GAMMA2) 
+#define omega 3
 
 #endif

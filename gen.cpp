@@ -31,6 +31,7 @@ int main()
 	ZZ_p::init(conv<ZZ>(_Q));
 
 	Mat<ZZ_p> S;
+
 	S.SetDims(N, N);
 
 	fo(i, 0, N)
@@ -40,6 +41,7 @@ int main()
 			S[i][j] = 1;
 		}
 	}
+
 
 	MatPrint(S);
 	return 0;
