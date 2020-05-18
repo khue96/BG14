@@ -13,13 +13,12 @@ using namespace std;
 using namespace NTL;
 
 
-
 //-------------------------------------------------------------------
 void MatPrint(Mat<ZZ_p>& tmp_mat)
 {
-	fo(i, 0, tmp_mat.NumCols())
+	fo(i, 0, tmp_mat.NumRows())
 	{
-		fo(j, 0, tmp_mat.NumRows())
+		fo(j, 0, tmp_mat.NumCols())
 		{
 			cout << tmp_mat[i][j] << " ";
 		}
@@ -72,6 +71,7 @@ void BGSign(Vec<ZZ_p>& tmp_z, Vec<ZZ_p>& tmp_c, Mat<ZZ_p>& tmp_S)
 	add(tmp_z, tmp_z, tmp_y);
 
 	cout << tmp_z << endl;
+	cout << tmp_y << endl;
 	cout << tmp_c << endl;
 
 	clear(tmp_z);

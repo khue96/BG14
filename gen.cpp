@@ -12,9 +12,9 @@ using namespace NTL;
 //-------------------------------------------------------------------
 void MatPrint(Mat<ZZ_p>& tmp_mat)
 {
-	fo(i, 0, tmp_mat.NumCols())
+	fo(i, 0, tmp_mat.NumRows())
 	{
-		fo(j, 0, tmp_mat.NumRows())
+		fo(j, 0, tmp_mat.NumCols())
 		{
 			cout << tmp_mat[i][j] << " ";
 		}
